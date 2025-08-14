@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meus Terços</title>
+    <meta name="description" content="Galeria dos meus terços">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <h1 id="siteTitle">Meus Terços</h1>
+        <nav class="contact-links" aria-label="Contatos">
+          <a id="whatsappLink" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
+          <a id="instagramLink" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+          <a id="emailLink" href="#" hidden>Email</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="perfil" class="card">
+        <h2>Minhas informações</h2>
+        <div class="profile">
+          <div class="avatar" id="avatar" aria-hidden="true"></div>
+          <div class="profile-details">
+            <p><strong>Nome:</strong> <span id="nome">Seu Nome</span></p>
+            <p><strong>Cidade:</strong> <span id="cidade">Sua Cidade/UF</span></p>
+            <p id="bio" class="muted">Breve descrição sobre você e seus terços.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="card">
+        <div class="section-header">
+          <h2>Meus terços</h2>
+          <div class="filters">
+            <input type="search" id="busca" placeholder="Buscar por material, cor ou título..." aria-label="Buscar terços">
+          </div>
+        </div>
+        <div id="grid" class="grid"></div>
+        <p id="semResultados" class="muted" hidden>Nenhum terço encontrado.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="ano"></span> <span id="footerNome"></span>. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
